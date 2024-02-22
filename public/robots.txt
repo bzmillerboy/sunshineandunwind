@@ -1,0 +1,10 @@
+//robots.txt
+
+# Block all crawlers for the following paths
+User-agent: *
+// Disallow: /accounts
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+Sitemap: https://www.newmantractor.com/sitemap.xml
