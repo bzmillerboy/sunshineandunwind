@@ -341,9 +341,6 @@ export default defineType({
       type: 'emailSubscribe',
     },
     {
-      type: 'tableBlock',
-    },
-    {
       type: 'rentalHighlights',
     },
     { type: 'compareModelsBanner' },

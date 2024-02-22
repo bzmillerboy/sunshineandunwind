@@ -24,43 +24,6 @@ const config = {
   experimental: {
     taint: true,
   },
-  rewrites() {
-    return [
-      {
-        source: '/function/:match*',
-        destination: `${process.env.NEXT_PUBLIC_FUNCTION_URL}/:match*`, // Proxy to Backend
-      },
-    ]
-  },
-  redirects() {
-    return [
-      {
-        source: '/portal',
-        destination: 'https://portal.newmantractor.com',
-        permanent: false,
-      },
-      {
-        source: '/admin',
-        destination: '/studio',
-        permanent: false,
-      },
-      {
-        source: '/blog',
-        destination: '/news',
-        permanent: false,
-      },
-      {
-        source: '/preview',
-        destination: '/studio/presentation?preview=/homepage',
-        permanent: false,
-      },
-      {
-        source: '/sitemap-index.xml',
-        destination: '/sitemap.xml',
-        permanent: true,
-      },
-    ]
-  },
 }
 
 export default withSentryConfig(
@@ -71,8 +34,8 @@ export default withSentryConfig(
 
     // Suppresses source map uploading logs during build
     silent: true,
-    org: 'newman-tractor',
-    project: 'v2-newmantractor-dotcom',
+    org: 'sunshineandunwind',
+    project: 'sunshineandunwind-website',
   },
   {
     // For all available options, see:

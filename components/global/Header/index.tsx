@@ -7,10 +7,10 @@ export async function Header() {
   const { data: companyInfo } = await loadCompanyInfo()
 
   const contentData = await Promise.all([
-    loadContentBlock('nav-equipment'),
-    loadContentBlock('nav-brands'),
-    loadContentBlock('nav-parts-service'),
-    loadContentBlock('nav-media'),
+    loadContentBlock('nav-about'),
+    // loadContentBlock('nav-brands'),
+    // loadContentBlock('nav-parts-service'),
+    // loadContentBlock('nav-media'),
   ])
 
   const megaMenuContent = contentData

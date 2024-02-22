@@ -5,11 +5,8 @@ import { Image } from 'sanity'
 import AccordionBlock from '@/components/blocks/AccordionBlock'
 import BlogGrid from '@/components/blocks/BlogGrid'
 import EmailSubscribe from '@/components/blocks/EmailSubscribe'
-import EquipmentHighlight from '@/components/blocks/EquipmentHighlight'
 import ExternalLink from '@/components/blocks/ExternalLink'
 import Figure from '@/components/blocks/Figure'
-import FinancingApplication from '@/components/blocks/FinancingApplication/FinancingApplication'
-import FinancingApplicationForm from '@/components/blocks/FinancingApplication/FinancingApplicationForm'
 import FiveColumn from '@/components/blocks/FiveColumn'
 import FourColumn from '@/components/blocks/FourColumn'
 import Hero from '@/components/blocks/Hero'
@@ -18,21 +15,13 @@ import HeroVideo from '@/components/blocks/HeroVideo'
 import HubspotForm from '@/components/blocks/HubspotForm'
 import Iframe from '@/components/blocks/Iframe'
 import InternalLink from '@/components/blocks/InternalLink'
-import InventoryCategoryAttachmentsGrid from '@/components/blocks/InventoryCategoryAttachmentsGrid'
-import InventoryCategoryGrid from '@/components/blocks/InventoryCategoryGrid'
-// import InventoryGridLoader from '@/components/blocks/InventoryGrid/InventoryGridLoader'
-import InventoryList from '@/components/blocks/InventoryList'
 import ModalButton from '@/components/blocks/ModalButton'
-import ModelGrid from '@/components/blocks/ModelGrid'
 import OneColumn from '@/components/blocks/OneColumn'
-import RentalGridLoader from '@/components/blocks/RentalGrid/RentalGridLoader'
-import RequestDemo from '@/components/blocks/RequestDemo/RequestDemo'
-import StaffGridLoader from '@/components/blocks/StaffGrid/StaffGridLoader'
+
 import ThreeColumn from '@/components/blocks/ThreeColumn'
 import TwoColumn from '@/components/blocks/TwoColumn'
 import Video from '@/components/blocks/Video'
 import VideoGrid from '@/components/blocks/VideoGrid'
-import ContentBlock from '@/components/shared/ContentBlock'
 import Table from '@/components/shared/Table'
 import { cleanEncodedMetadata, cn } from '@/lib/utils'
 
@@ -147,20 +136,6 @@ export function CustomPortableText({
           >
             {children}
           </ExternalLink>
-        )
-      },
-      requestDemo: ({ value }) => {
-        // return <div>Request Demo Component</div>
-        // console.log('requestDemo value:', value)
-        return <RequestDemo linkType={value.linkType} />
-      },
-      financeApplication: ({ value }) => {
-        return (
-          <FinancingApplication
-            successContent={
-              <ContentBlock slug={'apply-financing-contact-submit-success'} />
-            }
-          />
         )
       },
     },
@@ -295,40 +270,6 @@ export function CustomPortableText({
           customClasses={value.customClassName}
         />
       ),
-
-      equipmentGrid: ({ value }) => {
-        // console.log('equipmentGrid value:', value)
-        return (
-          <ModelGrid
-            categoryId={value?.equipmentCategory?._ref}
-            makeId={value?.equipmentMake?._ref}
-          />
-        )
-      },
-
-      inventoryCategoryGrid: ({ value }) => {
-        // console.log('inventoryCategoryGrid value:', value)
-        return <InventoryCategoryGrid categoryType={value.categoryType} />
-      },
-      inventoryCategoryAttachmentGrid: ({ value }) => {
-        // console.log('inventoryCategoryAttachmentGrid value:', value)
-        return (
-          <InventoryCategoryAttachmentsGrid
-            categoryRef={value.equipmentCategory._ref}
-          />
-        )
-      },
-      inventoryGrid: ({ value }) => {
-        return null
-      },
-      inventoryList: ({ value }) => {
-        return (
-          <InventoryList
-            displayLimit={value.displayLimit}
-            categoryId={value?.equipmentCategory?._ref}
-          />
-        )
-      },
       videoGrid: ({ value }) => {
         // console.log('videoGrid value:', value)
         return (
@@ -347,58 +288,16 @@ export function CustomPortableText({
           />
         )
       },
-      equipmentHighlight: ({ value }) => {
-        // console.log('equipmentHighlight value:', value)
-        return (
-          <EquipmentHighlight
-            color={value.color?.hex}
-            logo={value.logo}
-            tagline={value.tagline}
-            body={value.body}
-          />
-        )
-      },
       iFrame: ({ value }) => {
         // console.log('iFrame value:', value)
         return <Iframe url={value.url} />
-      },
-      jobListings: ({ value }) => {
-        return <div>Job Listings Component</div>
       },
       hubSpotForm: ({ value }) => {
         // console.log('hubSpotForm value:', value)
         return <HubspotForm formId={value.formId} />
       },
-      staffGrid: ({ value }) => {
-        // console.log('staffGrid value:', value)
-        return <StaffGridLoader locationId={value.Location?._ref} />
-      },
       emailSubscribe: ({ value }) => {
         return <EmailSubscribe formId={value.formId} />
-      },
-      tableBlock: ({ value }) => {
-        return (
-          <Table
-            firstRowIsHeading={value.firstRowIsHeading}
-            fullWidth={value.fullWidth}
-            table={value.table}
-          />
-        )
-      },
-      rentalHighlights: ({ value }) => {
-        return <div>Rental Highlights Component</div>
-      },
-      compareModelsBanner: ({ value }) => {
-        return <div>Compare Models Banner Component</div>
-      },
-      financeApplicationForm: ({ value }) => {
-        return (
-          <FinancingApplicationForm
-            successContent={
-              <ContentBlock slug={'apply-financing-contact-submit-success'} />
-            }
-          />
-        )
       },
       modal: ({ value }) => {
         // console.log('modal value:', value)
@@ -410,13 +309,6 @@ export function CustomPortableText({
             size={value.modalSize}
           />
         )
-      },
-      phoneNumber: ({ value }) => {
-        return <>Phone Number Component</>
-      },
-      rentalGrid: ({ value }) => {
-        // console.log('rentalGrid value:', value)
-        return <RentalGridLoader categoryId={value?.equipmentCategory?._ref} />
       },
       accordion: ({ value }) => {
         // console.log('accordion value:', value)
