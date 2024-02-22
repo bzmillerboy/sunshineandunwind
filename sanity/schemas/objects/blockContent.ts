@@ -106,11 +106,7 @@ export default defineType({
                 to: [
                   { type: 'page' },
                   { type: 'post' },
-                  { type: 'inventory' },
-                  { type: 'models' },
-                  { type: 'equipmentCategory' },
                   { type: 'assets' },
-                  { type: 'equipmentSubCategory' },
                   // other types you may want to link to
                 ],
                 options: {
@@ -278,9 +274,6 @@ export default defineType({
       type: 'hero',
     },
     {
-      type: 'heroEquipment',
-    },
-    {
       type: 'heroVideo',
     },
     {
@@ -298,53 +291,19 @@ export default defineType({
     {
       type: 'fiveColumn',
     },
-    {
-      type: 'equipmentGrid',
-    },
-    {
-      type: 'inventoryCategoryGrid',
-    },
-    {
-      type: 'inventoryCategoryAttachmentGrid',
-    },
-    {
-      type: 'inventoryGrid',
-    },
-    {
-      type: 'rentalGrid',
-    },
-    {
-      type: 'inventoryList',
-    },
-    {
-      type: 'videoGrid',
-    },
+
     {
       type: 'blogGrid',
-    },
-    {
-      type: 'equipmentHighlight',
     },
     {
       type: 'iFrame',
     },
     {
-      type: 'jobListings',
-    },
-    {
       type: 'hubSpotForm',
-    },
-    {
-      type: 'staffGrid',
     },
     {
       type: 'emailSubscribe',
     },
-    {
-      type: 'rentalHighlights',
-    },
-    { type: 'compareModelsBanner' },
-    { type: 'financeApplicationForm' },
     { type: 'modal' },
     { type: 'accordion' },
   ],

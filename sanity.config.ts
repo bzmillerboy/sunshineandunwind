@@ -34,7 +34,6 @@ import heroVideo from '@/sanity/schemas/objects/heroVideo'
 import imageGallery from '@/sanity/schemas/objects/imageGallery'
 import mainImage from '@/sanity/schemas/objects/mainImage'
 import oneColumn from '@/sanity/schemas/objects/oneColumn'
-import phoneNumber from '@/sanity/schemas/objects/phoneNumber'
 import threeColumn from '@/sanity/schemas/objects/threeColumn'
 import twoColumn from '@/sanity/schemas/objects/twoColumn'
 import video from '@/sanity/schemas/objects/video'
@@ -45,7 +44,6 @@ import accordion from './sanity/schemas/objects/accordion'
 import blogGrid from './sanity/schemas/objects/blogGrid'
 import emailSubscribe from './sanity/schemas/objects/emailSubscribe'
 
-import heroEquipment from './sanity/schemas/objects/heroEquipment'
 import hubSpotForm from './sanity/schemas/objects/hubSpotForm'
 import iFrame from './sanity/schemas/objects/iFrame'
 
@@ -54,7 +52,7 @@ import modal from './sanity/schemas/objects/modal'
 import videoGrid from './sanity/schemas/objects/videoGrid'
 import StudioLogo from './sanity/StudioLogo'
 
-const title = 'NT CMS'
+const title = 'Sunshine & Unwind'
 
 // createa a functional component that returns a React element of an img tag
 
@@ -75,7 +73,6 @@ export default defineConfig({
       page,
       post,
       category,
-      location,
       // Objects
       asset,
       accordion,
@@ -85,7 +82,6 @@ export default defineConfig({
       blockContentSimple,
       figure,
       oneColumn,
-      phoneNumber,
       imageGallery,
       twoColumn,
       threeColumn,
@@ -94,7 +90,6 @@ export default defineConfig({
       video,
       hero,
       heroVideo,
-      heroEquipment,
       videoGrid,
       blogGrid,
       iFrame,
@@ -105,7 +100,7 @@ export default defineConfig({
   },
   plugins: [
     structureTool({
-      structure: customStructure,
+      // structure: customStructure,
     }),
     assist(),
     presentationTool({

@@ -36,12 +36,12 @@ export default defineType({
       title: 'Featured?',
       type: 'boolean',
     },
-    {
-      name: 'author',
-      title: 'Author',
-      type: 'reference',
-      to: { type: 'staff' },
-    },
+    // {
+    //   name: 'author',
+    //   title: 'Author',
+    //   type: 'reference',
+    //   to: { type: 'staff' },
+    // },
     {
       name: 'video_link',
       title: 'Video Link',

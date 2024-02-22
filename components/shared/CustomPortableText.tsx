@@ -10,7 +10,6 @@ import Figure from '@/components/blocks/Figure'
 import FiveColumn from '@/components/blocks/FiveColumn'
 import FourColumn from '@/components/blocks/FourColumn'
 import Hero from '@/components/blocks/Hero'
-import HeroEquipment from '@/components/blocks/HeroEquipment'
 import HeroVideo from '@/components/blocks/HeroVideo'
 import HubspotForm from '@/components/blocks/HubspotForm'
 import Iframe from '@/components/blocks/Iframe'
@@ -198,15 +197,6 @@ export function CustomPortableText({
               alignment={value.alignment}
             />
           </>
-        )
-      },
-      heroEquipment: ({ value }) => {
-        return (
-          <HeroEquipment
-            mainImage={value.mainImage}
-            body={value.body}
-            backgroundImage={value.backgroundImage}
-          />
         )
       },
       heroVideo: ({ value }) => {
