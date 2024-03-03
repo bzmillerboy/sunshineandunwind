@@ -11,7 +11,7 @@ export function Page({ data }: PageProps) {
   const { body } = data ?? {}
 
   return (
-    <div className="page-body animate-in fade-in ease-in-out duration-300">
+    <div className="page-body animate-in fade-in ease-in-out duration-300 relative z-0">
       {body && <CustomPortableText value={body} />}
     </div>
   )

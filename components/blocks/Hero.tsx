@@ -39,9 +39,9 @@ export default function Hero({
         { 'bg-white': lightTheme, 'bg-black': !lightTheme },
         { light: lightTheme, dark: !lightTheme },
       )}
-      style={{
-        backgroundImage: bgClasses[String(lightTheme)],
-      }}
+      // style={{
+      //   backgroundImage: bgClasses[String(lightTheme)],
+      // }}
     >
       <Img
         image={mainImage || fallbackImage}
@@ -49,12 +49,15 @@ export default function Hero({
         width={bgImageSize[size]?.width}
         height={bgImageSize[size]?.height}
         loading="eager"
-        className={cn('absolute inset-0 z-[-1] w-full h-full object-cover', {
-          'opacity-10': lightTheme,
-          'opacity-20': !lightTheme,
-        })}
+        className={cn(
+          'absolute inset-0 z-[-1] w-full h-full object-cover brightness-50',
+          {
+            // 'opacity-10': lightTheme,
+            // 'opacity-20': !lightTheme,
+          },
+        )}
         mode="cover"
-        queryParams={{ sharpen: 50, q: 10 }}
+        queryParams={{ sharpen: 50, q: 90 }}
       />
       <div className="container relative z-10 flex flex-col m-auto">
         <div

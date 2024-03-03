@@ -9,6 +9,7 @@ export const sizeClasses = {
   '80vh': 'min-h-[580px] mb-16 py-16', //deprecated value or 'large'
   xlarge: 'min-h-[680px] mb-16 py-16',
   '100vh': 'min-h-[680px] mb-16 py-16', //deprecated value or 'xlarge'
+  fullView: 'h-[100vh] mb-16 py-16', //deprecated value or 'xlarge'
 }
 export const bgClasses = {
   true: 'linear-gradient(to right, rgba(255, 255, 255, 0.75) 50vw, rgba(229, 218, 181, 0.5) 100%',
@@ -32,4 +33,5 @@ export const bgImageSize = {
   '80vh': { width: 1440, height: 580 }, //deprecated value or 'large'
   xlarge: { width: 1440, height: 680 },
   '100vh': { width: 1440, height: 680 }, //deprecated value or 'xlarge'
+  fullView: { width: 1920, height: 1070 }, //deprecated value or 'xlarge'
 }

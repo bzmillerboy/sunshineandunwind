@@ -21,7 +21,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['var(--font-roboto-flex)', ...fontFamily.sans],
+        sans: ['var(--font-jost)', ...fontFamily.sans],
       },
       colors: {
         border: 'hsl(var(--border))',

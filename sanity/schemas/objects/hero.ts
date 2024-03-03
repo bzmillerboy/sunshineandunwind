@@ -48,6 +48,7 @@ export default defineType({
           { title: 'Medium', value: 'medium' },
           { title: 'Large', value: 'large' },
           { title: 'Xtra Large', value: 'xlarge' },
+          { title: 'Full View', value: 'fullView' },
         ],
         layout: 'radio',
       },

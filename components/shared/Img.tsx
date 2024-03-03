@@ -32,7 +32,7 @@ export default function Img({
 }: ImgProps) {
   const baseUrl = `https://cdn.sanity.io/images/${projectId}/${dataset}/`
 
-  // console.log('Img:', alt, lqip)
+  // console.log('Img:', image)
 
   // removing for now until I can find a better solution
   // https://github.com/coreyward/sanity-image/issues/23
@@ -55,7 +55,7 @@ export default function Img({
     return (
       <SanityImage
         // Pass the Sanity Image ID (`_id`) (e.g., `image-abcde12345-1200x800-jpg`)
-        id={image?.asset?._id || image?.asset?._ref}
+        id={image?.asset?._id || image?.asset?._ref || image}
         mode={mode}
         preview={lqip || image?.asset?.lqip}
         baseUrl={baseUrl}
