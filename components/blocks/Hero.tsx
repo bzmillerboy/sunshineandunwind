@@ -39,9 +39,6 @@ export default function Hero({
         { 'bg-white': lightTheme, 'bg-black': !lightTheme },
         { light: lightTheme, dark: !lightTheme },
       )}
-      // style={{
-      //   backgroundImage: bgClasses[String(lightTheme)],
-      // }}
     >
       <Img
         image={mainImage || fallbackImage}
@@ -51,10 +48,6 @@ export default function Hero({
         loading="eager"
         className={cn(
           'absolute inset-0 z-[-1] w-full h-full object-cover brightness-50',
-          {
-            // 'opacity-10': lightTheme,
-            // 'opacity-20': !lightTheme,
-          },
         )}
         mode="cover"
         queryParams={{ sharpen: 50, q: 90 }}
@@ -62,13 +55,17 @@ export default function Hero({
       <div className="container relative z-10 flex flex-col m-auto">
         <div
           data-sanity-edit-target
-          className={cn('max-w-xl', {
+          className={cn('max-w-3xl', {
             'm-auto': alignment === 'center',
             'ml-auto': alignment === 'right',
           })}
         >
           {title && <H1>{title}</H1>}
-          {body && <CustomPortableText value={body} />}
+          {body && (
+            <div className="hero-content-wrapper [&>h1]:text-8xl [&>p]:text-xl">
+              <CustomPortableText value={body} />
+            </div>
+          )}
         </div>
       </div>
     </section>

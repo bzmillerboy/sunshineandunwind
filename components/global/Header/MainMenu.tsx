@@ -232,12 +232,211 @@ const norrisLakeImage = {
   },
 }
 
+const photo2 = {
+  asset: {
+    _id: 'image-7742bfc4bc175064ed11e6976fc219c50df98ab9-4018x3015-jpg',
+    metadata: {
+      blurHash: 'VBL;Ty$|bu=syZ0ASij?S6wYHqRQR:RjD+x{M}V?a$XB',
+      _type: 'sanity.imageMetadata',
+      palette: {
+        muted: {
+          background: '#baa87e',
+          _type: 'sanity.imagePaletteSwatch',
+          foreground: '#000',
+          title: '#fff',
+          population: 5.42,
+        },
+        lightVibrant: {
+          foreground: '#000',
+          title: '#fff',
+          population: 7.6,
+          background: '#dfc589',
+          _type: 'sanity.imagePaletteSwatch',
+        },
+        darkVibrant: {
+          population: 0.19,
+          background: '#6c4b1f',
+          _type: 'sanity.imagePaletteSwatch',
+          foreground: '#fff',
+          title: '#fff',
+        },
+        lightMuted: {
+          _type: 'sanity.imagePaletteSwatch',
+          foreground: '#000',
+          title: '#fff',
+          population: 1.85,
+          background: '#cec1a7',
+        },
+        vibrant: {
+          population: 2.83,
+          background: '#ac892f',
+          _type: 'sanity.imagePaletteSwatch',
+          foreground: '#fff',
+          title: '#fff',
+        },
+        dominant: {
+          foreground: '#000',
+          title: '#fff',
+          population: 7.6,
+          background: '#dfc589',
+          _type: 'sanity.imagePaletteSwatch',
+        },
+        _type: 'sanity.imagePalette',
+        darkMuted: {
+          _type: 'sanity.imagePaletteSwatch',
+          foreground: '#fff',
+          title: '#fff',
+          population: 0.75,
+          background: '#222a28',
+        },
+      },
+      hasAlpha: false,
+      lqip: 'data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgAD/8QAJBAAAgEDAwMFAAAAAAAAAAAAAQIEAAMREiExBRMVIiNRYZH/xAAVAQEBAAAAAAAAAAAAAAAAAAAEA//EABsRAAIDAAMAAAAAAAAAAAAAAAECAAMRExQh/9oADAMBAAIRAxEAPwBtK6QYt0JqAOMnfNZzIZi2e4cupIHpGT+Ujvi20pZLW1DEadvitWupJdvaQqu3HNB7tXumX4G2G/HuOI2fs1Uoguz2mYEAaiAMcVUpbFYAiHKkHJ//2Q==',
+      dimensions: {
+        _type: 'sanity.imageDimensions',
+        width: 4018,
+        aspectRatio: 1.332669983416252,
+        height: 3015,
+      },
+      exif: {
+        SensingMethod: 2,
+        WhiteBalance: 0,
+        ISO: 50,
+        SubSecTimeDigitized: '032',
+        ExposureProgram: 2,
+        SubSecTimeOriginal: '032',
+        LensModel: 'iPhone 12 Pro Max back camera 1.54mm f/2.4',
+        ExposureMode: 0,
+        _type: 'sanity.imageExifMetadata',
+        ExposureBiasValue: 0,
+        ColorSpace: 1,
+        DateTimeDigitized: '2021-06-19T15:03:24.000Z',
+        ShutterSpeedValue: 6.923840520748576,
+        Flash: 16,
+        LensSpecification: [1.5399999618512084, 1.5399999618512084, 2.4, 2.4],
+        ExposureTime: 0.008264462809917356,
+        LensMake: 'Apple',
+        PixelXDimension: 4018,
+        FocalLengthIn35mmFormat: 13,
+        MeteringMode: 3,
+        PixelYDimension: 3015,
+        DateTimeOriginal: '2021-06-19T15:03:24.000Z',
+        BrightnessValue: 6.030323507052961,
+        ApertureValue: 2.5260689280130513,
+        FocalLength: 1.5399999618512084,
+        FNumber: 2.4,
+      },
+      isOpaque: true,
+    },
+  },
+}
+
+const photo1 = {
+  asset: {
+    _id: 'image-a5a7686d9de0362ca4ddaacdcfd061dd7afb89e7-4032x3024-jpg',
+    metadata: {
+      lqip: 'data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAcCAwUG/8QAIRAAAQMFAAIDAAAAAAAAAAAAAQIDBAAFBhESITEUcZH/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAQL/xAAeEQACAQMFAAAAAAAAAAAAAAABAgADERIEFCFx8P/aAAwDAQACEQMRAD8A1MXv9yu61xnZMxltrx8jY19VZlFwvNqbUI0yfJVz0kpSNH8qOOYFJh24xHLu6kFWwOd7roTjF6ZicMXFCyBpKlD1WUqs9PHKF2/N4pFZE++ornyZjcj0pJB8UUypmDMyXQ7KkIL5SOzyfJooRdlNhc+7lOnJn//Z',
+      dimensions: {
+        width: 4032,
+        aspectRatio: 1.3333333333333333,
+        height: 3024,
+        _type: 'sanity.imageDimensions',
+      },
+      exif: {
+        SubSecTimeOriginal: '014',
+        PixelXDimension: 4032,
+        ExposureProgram: 1,
+        Flash: 16,
+        FocalLength: 7.5,
+        ExposureBiasValue: -0.13671875,
+        DateTimeDigitized: '2022-06-05T14:44:26.000Z',
+        MeteringMode: 5,
+        SceneCaptureType: 0,
+        LensModel: 'iPhone 12 Pro Max back camera 7.5mm f/2.2',
+        SensingMethod: 2,
+        ApertureValue: 2.275007048020513,
+        LensMake: 'Apple',
+        FocalLengthIn35mmFormat: 64,
+        ExposureMode: 1,
+        ExposureTime: 0.000088999644001424,
+        ColorSpace: 1,
+        DateTimeOriginal: '2022-06-05T14:44:26.000Z',
+        WhiteBalance: 0,
+        PixelYDimension: 3024,
+        ISO: 160,
+        FNumber: 2.2,
+        SubSecTimeDigitized: '014',
+        BrightnessValue: 9.892831412103746,
+        ShutterSpeedValue: 13.455835145490317,
+        _type: 'sanity.imageExifMetadata',
+        LensSpecification: [7.5, 7.5, 2.2, 2.2],
+      },
+      isOpaque: true,
+      blurHash: 'VSHCo:o#DhRiR$AKxve-oJj^_4kCxuogjsWIRjt8tSRi',
+      _type: 'sanity.imageMetadata',
+      palette: {
+        dominant: {
+          background: '#b4d6f3',
+          _type: 'sanity.imagePaletteSwatch',
+          foreground: '#000',
+          title: '#000',
+          population: 7.86,
+        },
+        _type: 'sanity.imagePalette',
+        darkMuted: {
+          population: 7.55,
+          background: '#577338',
+          _type: 'sanity.imagePaletteSwatch',
+          foreground: '#fff',
+          title: '#fff',
+        },
+        muted: {
+          _type: 'sanity.imagePaletteSwatch',
+          foreground: '#fff',
+          title: '#fff',
+          population: 1.61,
+          background: '#54869d',
+        },
+        lightVibrant: {
+          background: '#b4d6f3',
+          _type: 'sanity.imagePaletteSwatch',
+          foreground: '#000',
+          title: '#000',
+          population: 7.86,
+        },
+        darkVibrant: {
+          _type: 'sanity.imagePaletteSwatch',
+          foreground: '#fff',
+          title: '#fff',
+          population: 0.71,
+          background: '#52710e',
+        },
+        lightMuted: {
+          foreground: '#000',
+          title: '#fff',
+          population: 0.5,
+          background: '#a7cecc',
+          _type: 'sanity.imagePaletteSwatch',
+        },
+        vibrant: {
+          _type: 'sanity.imagePaletteSwatch',
+          foreground: '#000',
+          title: '#fff',
+          population: 0.01,
+          background: '#9ec445',
+        },
+      },
+      hasAlpha: false,
+    },
+  },
+}
+
 export default function MainMenu() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="group/prop bg-transparent hover:bg-transparent hover:text-white data-[state=open]:bg-transparent focus:bg-transparent focus:text-white">
+          <NavigationMenuTrigger className="group/prop bg-transparent hover:bg-transparent hover:text-white data-[state=open]:bg-transparent focus:bg-transparent focus:text-white tracking-widest">
             <span className="relative">
               PROPERTY
               <span className="ease absolute -bottom-2 left-0 h-0 w-0 border-b border-white transition-all duration-200 group-hover/prop:w-full"></span>
@@ -282,7 +481,7 @@ export default function MainMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="group/lake bg-transparent hover:bg-transparent hover:text-white data-[state=open]:bg-transparent focus:bg-transparent focus:text-white">
+          <NavigationMenuTrigger className="group/lake bg-transparent hover:bg-transparent hover:text-white data-[state=open]:bg-transparent focus:bg-transparent focus:text-white tracking-widest">
             <span className="relative">
               LAKE
               <span className="ease absolute -bottom-2 left-0 h-0 w-0 border-b border-white transition-all duration-200 group-hover/lake:w-full"></span>
@@ -331,7 +530,7 @@ export default function MainMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="group/photos bg-transparent hover:bg-transparent hover:text-white data-[state=open]:bg-transparent focus:bg-transparent focus:text-white">
+          <NavigationMenuTrigger className="group/photos bg-transparent hover:bg-transparent hover:text-white data-[state=open]:bg-transparent focus:bg-transparent focus:text-white tracking-widest">
             <span className="relative">
               PHOTOS
               <span className="ease absolute -bottom-2 left-0 h-0 w-0 border-b border-white transition-all duration-200 group-hover/photos:w-full"></span>
@@ -345,14 +544,14 @@ export default function MainMenu() {
                     <a href="/">
                       <Img
                         className="overflow-hidden rounded-[3px]"
-                        image={norrisLakeImage}
+                        image={photo1}
                         alt="Property"
                       />
                     </a>
                     <a href="/">
                       <Img
                         className="overflow-hidden rounded-[3px]"
-                        image={norrisLakeImage}
+                        image={photo2}
                         alt="Property"
                       />
                     </a>
@@ -384,7 +583,7 @@ export default function MainMenu() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className="group/contact bg-transparent hover:bg-transparent hover:text-white data-[state=open]:bg-transparent focus:bg-transparent focus:text-white">
+            <NavigationMenuLink className="group/contact bg-transparent hover:bg-transparent hover:text-white data-[state=open]:bg-transparent focus:bg-transparent focus:text-white tracking-widest text-sm px-4 py-2 inline-flex h-10 items-center">
               <span className="relative">
                 CONTACT
                 <span className="ease absolute -bottom-2 left-0 h-0 w-0 border-b border-white transition-all duration-200 group-hover/contact:w-full"></span>

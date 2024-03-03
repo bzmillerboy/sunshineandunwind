@@ -3,10 +3,10 @@ import { MetadataRoute } from 'next'
 export default function manifest(): MetadataRoute.Manifest {
   return {
     id: '/',
-    name: 'Newman Tractor',
+    name: 'Sunshine & Unwind',
     short_name: 'NT.com',
     description:
-      'Newman Tractor is an authorized Sany Heavy Equipment dealership with over 40 years of experience',
+      'Sunshine & Unwind is an authorized Sany Heavy Equipment dealership with over 40 years of experience',
     start_url: '/',
     display: 'standalone',
     background_color: '#fff',

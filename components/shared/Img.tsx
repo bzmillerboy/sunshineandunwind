@@ -20,7 +20,7 @@ interface ImgProps {
 
 export default function Img({
   image,
-  alt = 'Newman Tractor Image',
+  alt = 'Sunshine & Unwind Image',
   width = 1000,
   height,
   size = '100vw',

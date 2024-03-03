@@ -18,16 +18,16 @@ export async function generateMetadata(): Promise<Metadata> {
   // const [{ data: settings }] = await Promise.all([loadSettings()])
   const ogImage =
     'https://cdn.sanity.io/images/agnoplrn/production/29637cdcb290aaa1ff20025c66f9a8ebe9e0ae9d-2100x1132.png'
-  const title = 'Newman Tractor'
+  const title = 'Sunshine & Unwind'
   const description =
-    'Newman Tractor is an authorized Sany Heavy Equipment dealership with over 40 years of experience in the heavy equipment sales and rental industry.'
+    'Sunshine & Unwind is an authorized Sany Heavy Equipment dealership with over 40 years of experience in the heavy equipment sales and rental industry.'
   const url = 'https://newmantractor.com'
 
   return {
     metadataBase: new URL(url),
     title: {
       template: `%s | ${title}`,
-      default: 'Newman Tractor', // a default is required when creating a template
+      default: 'Sunshine & Unwind', // a default is required when creating a template
     },
     description: description,
     openGraph: {

@@ -1,9 +1,9 @@
 import { cn } from '@/lib/utils'
 
 const baseHeadingClasses =
-  'uppercase scroll-m-20 font-extrabold tracking-tight leading-tight text-foreground'
+  'scroll-m-20 font-extrabold tracking-widest text-foreground font-serif'
 const baseParagraphClasses =
-  'text-lg font-weight-400 [&:not(:last-child)]:mb-4 [&:not(:only-child)]:mb-4 text-foreground/70'
+  'text-lg font-weight-400 [&:not(:last-child)]:mb-4 [&:not(:only-child)]:mb-4 text-foreground'
 
 export function P({
   children,

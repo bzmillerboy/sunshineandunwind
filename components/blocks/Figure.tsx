@@ -58,7 +58,7 @@ export default async function Figure({
             <Img
               className="w-full"
               image={image}
-              alt={alt || 'Newman Tractor Image'}
+              alt={alt || 'Sunshine & Unwind Image'}
               size="calc(100vw - 64px)"
               width={608}
               lqip={data?.lqip}
