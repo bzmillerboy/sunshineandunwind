@@ -1,6 +1,7 @@
 import Logo from '@/components/shared/Logo'
 import MainMenu from './MainMenu'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 export async function Header() {
   return (
@@ -16,7 +17,7 @@ export async function Header() {
         <div className="flex relative z-20">
           <div className="w-[40%]">
             <div className="flex items-center h-full space-x-4">
-              <MainMenu />
+              {/* <MainMenu /> */}
             </div>
           </div>
           <div className="w-[20%]">
@@ -27,9 +28,11 @@ export async function Header() {
               <a href="tel:8593635411" className="p-4">
                 Tel: 859.363.5411
               </a>
-              <Button variant="outline" className="m-0">
-                Book Now
-              </Button>
+              <Link href="mailto:sunshineandunwind@gmail.com" target="_blank">
+                <Button variant="outline" className="m-0">
+                  Book Now
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

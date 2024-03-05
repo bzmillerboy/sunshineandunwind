@@ -77,7 +77,7 @@ export default async function IndexRoute({
     <>
       <Header />
       <Providers>{children}</Providers>
-      <Footer />
+      {/* <Footer /> */}
       {draftMode().isEnabled && <LiveVisualEditing />}
     </>
   )

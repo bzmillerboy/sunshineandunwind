@@ -62,7 +62,7 @@ export default function Hero({
         >
           {title && <H1>{title}</H1>}
           {body && (
-            <div className="hero-content-wrapper [&>h1]:text-8xl [&>p]:text-xl">
+            <div className="hero-content-wrapper [&>h1]:text-8xl [&>p]:text-xl [&>h1]:font-normal">
               <CustomPortableText value={body} />
             </div>
           )}
