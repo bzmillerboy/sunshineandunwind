@@ -17,7 +17,7 @@ const LiveVisualEditing = dynamic(
 export async function generateMetadata(): Promise<Metadata> {
   // const [{ data: settings }] = await Promise.all([loadSettings()])
   const ogImage =
-    'https://cdn.sanity.io/images/agnoplrn/production/29637cdcb290aaa1ff20025c66f9a8ebe9e0ae9d-2100x1132.png'
+    'https://cdn.sanity.io/images/qofrw2r7/production/a5a7686d9de0362ca4ddaacdcfd061dd7afb89e7-4032x3024.jpg'
   const title = 'Sunshine & Unwind'
   const description =
     'Sunshine & Unwind is an authorized Sany Heavy Equipment dealership with over 40 years of experience in the heavy equipment sales and rental industry.'
@@ -37,17 +37,7 @@ export async function generateMetadata(): Promise<Metadata> {
       locale: 'en_US',
       type: 'website',
     },
-    keywords: [
-      'heavy equipment',
-      'sany',
-      'bell',
-      'morooka',
-      'sales',
-      'rental',
-      'construction equipment',
-      'heavy equipment sales',
-      'heavy equipment rental',
-    ],
+    keywords: ['vacation rental', 'lake house', 'norris lake'],
     robots: {
       index: true,
       follow: true,
