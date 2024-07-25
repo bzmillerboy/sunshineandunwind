@@ -21,7 +21,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const title = 'Sunshine & Unwind'
   const description =
     'Sunshine & Unwind is an authorized Sany Heavy Equipment dealership with over 40 years of experience in the heavy equipment sales and rental industry.'
-  const url = 'https://newmantractor.com'
+  const url = 'https://www.sunshineandunwind.com'
 
   return {
     metadataBase: new URL(url),
@@ -32,7 +32,7 @@ export async function generateMetadata(): Promise<Metadata> {
     description: description,
     openGraph: {
       url: url,
-      siteName: 'newmantractor.com', //settings?.siteName,
+      siteName: 'Sunshine & Unwind', //settings?.siteName,
       images: ogImage ? [ogImage] : [],
       locale: 'en_US',
       type: 'website',
@@ -77,7 +77,7 @@ export default async function IndexRoute({
     <>
       <Header />
       <Providers>{children}</Providers>
-      {/* <Footer /> */}
+      <Footer />
       {draftMode().isEnabled && <LiveVisualEditing />}
     </>
   )

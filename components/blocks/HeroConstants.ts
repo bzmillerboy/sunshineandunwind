@@ -1,15 +1,15 @@
 export const sizeClasses = {
-  compact: 'h-auto px-0 py-1 mb-1 lg:px-0 lg:py-2 lg:mb-2',
-  default: 'h-auto mb-16 py-16', //default if no size is set
-  small: 'min-h-[370px] mb-8 py-16',
-  auto: 'min-h-[370px] mb-8 py-16', //deprecated value or 'small'
-  medium: 'min-h-[508px] mb-16 py-16',
-  '60vh': 'min-h-[508px] mb-16 py-16', //deprecated value or 'medium'
-  large: 'min-h-[580px] mb-16 py-16',
-  '80vh': 'min-h-[580px] mb-16 py-16', //deprecated value or 'large'
-  xlarge: 'min-h-[680px] mb-16 py-16',
-  '100vh': 'min-h-[680px] mb-16 py-16', //deprecated value or 'xlarge'
-  fullView: 'h-[100vh] mb-16 py-16', //deprecated value or 'xlarge'
+  compact: 'h-auto px-0 py-1 lg:px-0 lg:py-2',
+  default: 'h-auto py-16', //default if no size is set
+  small: 'min-h-[370px] py-16',
+  auto: 'min-h-[370px]  py-16', //deprecated value or 'small'
+  medium: 'min-h-[508px]  py-16',
+  '60vh': 'min-h-[508px]  py-16', //deprecated value or 'medium'
+  large: 'min-h-[580px]  py-16',
+  '80vh': 'min-h-[580px]  py-16', //deprecated value or 'large'
+  xlarge: 'min-h-[680px]  py-16',
+  '100vh': 'min-h-[680px]  py-16', //deprecated value or 'xlarge'
+  fullView: 'h-[100vh]  py-16', //deprecated value or 'xlarge'
 }
 export const bgClasses = {
   true: 'linear-gradient(to right, rgba(255, 255, 255, 0.75) 50vw, rgba(229, 218, 181, 0.5) 100%',

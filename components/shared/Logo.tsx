@@ -1,8 +1,8 @@
 export default function Logo() {
   return (
     <svg
-      width="323"
-      height="84"
+      width="100%"
+      height="100%"
       viewBox="0 0 323 84"
       fill="none"
       className="scale-75"

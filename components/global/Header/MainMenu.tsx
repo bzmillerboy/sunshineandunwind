@@ -6,16 +6,12 @@ import Link from 'next/link'
 import {
   NavigationMenu,
   NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  NavigationMenuViewport,
-  navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
 import Img from '@/components/shared/Img'
-import Figure from '@/components/blocks/Figure'
 import { Button } from '@/components/ui/button'
 
 const aboutImage = {
@@ -454,6 +450,7 @@ export default function MainMenu() {
                       className="overflow-hidden rounded-[3px]"
                       image={aboutImage}
                       alt="Property"
+                      width={150}
                     />
                     <div className="mb-2 mt-4 text-lg font-medium">About</div>
                     <p className="text-sm leading-tight text-muted-foreground">
@@ -499,6 +496,7 @@ export default function MainMenu() {
                       className="overflow-hidden rounded-[3px]"
                       image={norrisLakeImage}
                       alt="Property"
+                      width={150}
                     />
                     <div className="mb-2 mt-4 text-lg font-medium">
                       Norris Lake
@@ -546,6 +544,7 @@ export default function MainMenu() {
                         className="overflow-hidden rounded-[3px]"
                         image={photo1}
                         alt="Property"
+                        width={150}
                       />
                     </a>
                     <a href="/">
@@ -553,6 +552,7 @@ export default function MainMenu() {
                         className="overflow-hidden rounded-[3px]"
                         image={photo2}
                         alt="Property"
+                        width={150}
                       />
                     </a>
                     <div className="mb-2 mt-4 text-lg font-medium text-center">

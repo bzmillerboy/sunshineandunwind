@@ -33,7 +33,7 @@ export function H1({
   return (
     <h1
       className={cn(
-        `${baseHeadingClasses} text-4xl lg:text-6xl mb-3 ${className}`,
+        `${baseHeadingClasses} md:text-4xl lg:text-6xl mb-3 ${className}`,
       )}
     >
       {children}
@@ -171,7 +171,7 @@ export function Label({
   return (
     <p
       className={cn(
-        `text-sm text-muted-foreground font-thin leading-6 mb-0 lg:text-base lg:leading-7 ${className}`,
+        `text-sm text-muted-foreground leading-6 mb-0 lg:leading-7 uppercase font-medium tracking-wider ${className}`,
       )}
     >
       {children}
