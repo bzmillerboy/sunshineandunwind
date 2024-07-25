@@ -32,11 +32,20 @@ export async function Footer() {
         </div>
         <div className="border-y border-r">
           <Label>phone</Label>
-          <div className="mt-4">Tel: 859.363.5411</div>
+
+          <div className="mt-4">
+            <Link href="tel:8503635411" target="_blank">
+              Tel: 859.363.5411
+            </Link>
+          </div>
         </div>
         <div className="border-y border-r">
           <Label>email</Label>
-          <div className="mt-4">info@sunshineandunwind.com</div>
+          <div className="mt-4">
+            <Link href="mailto:info@sunshineandunwind.com" target="_blank">
+              info@sunshineandunwind.com
+            </Link>
+          </div>
         </div>
         <div className="border-y border-r">
           <Label>social</Label>
