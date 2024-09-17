@@ -6,7 +6,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: 'Sunshine & Unwind',
     short_name: 'NT.com',
     description:
-      'Sunshine & Unwind is an authorized Sany Heavy Equipment dealership with over 40 years of experience',
+      "Sunshine & Unwind is a luxurious 5-bedroom vacation rental property with unparalleled views of Norris Lake's crystal-clear waters.",
     start_url: '/',
     display: 'standalone',
     background_color: '#fff',

@@ -20,7 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
     'https://cdn.sanity.io/images/qofrw2r7/production/a5a7686d9de0362ca4ddaacdcfd061dd7afb89e7-4032x3024.jpg'
   const title = 'Sunshine & Unwind'
   const description =
-    'Sunshine & Unwind is an authorized Sany Heavy Equipment dealership with over 40 years of experience in the heavy equipment sales and rental industry.'
+    "Sunshine & Unwind is a luxurious 5-bedroom vacation rental property with unparalleled views of Norris Lake's crystal-clear waters."
   const url = 'https://www.sunshineandunwind.com'
 
   return {
