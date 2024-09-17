@@ -53,7 +53,7 @@ export default defineType({
   ],
   preview: {
     select: {
-      title: 'alt' || 'Image',
+      title: 'Image',
     },
   },
 })
