@@ -442,9 +442,9 @@ export default function MainMenu() {
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-4">
                 <NavigationMenuLink asChild>
-                  <a
+                  <Link
                     className="flex h-full w-full select-none flex-col justify-start rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
+                    href="/about"
                   >
                     <Img
                       className="overflow-hidden rounded-[3px]"
@@ -458,20 +458,20 @@ export default function MainMenu() {
                       lake views. Our home is perfect for groups looking for a
                       relaxing and fun getaway.
                     </p>
-                  </a>
+                  </Link>
                 </NavigationMenuLink>
               </li>
 
-              <ListItem href="/docs/installation" title="Amenities">
+              <ListItem href="/amenities" title="Amenities">
                 All the amenities you need for a comfortable stay.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Location">
+              <ListItem href="/location" title="Location">
                 Located in in Deerfield Resort centered on Norris Lake.
               </ListItem>
-              <ListItem href="/docs" title="Photos">
+              <ListItem href="/photos" title="Photos">
                 See the property and all it has to offer.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Reviews">
+              <ListItem href="/reviews" title="Reviews">
                 Our guests love sharing their experience at our property.
               </ListItem>
             </ul>
@@ -488,9 +488,9 @@ export default function MainMenu() {
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-4">
                 <NavigationMenuLink asChild>
-                  <a
+                  <Link
                     className="flex h-full w-full select-none flex-col justify-start rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
+                    href="/lake"
                   >
                     <Img
                       className="overflow-hidden rounded-[3px]"
@@ -506,22 +506,22 @@ export default function MainMenu() {
                       Lake is a popular destination for water sports and
                       fishing.
                     </p>
-                  </a>
+                  </Link>
                 </NavigationMenuLink>
               </li>
 
-              <ListItem href="/docs/installation" title="Photos">
+              <ListItem href="/lake#photos" title="Photos">
                 See the beauty of Norris Lake. From clear water to mountain
                 scenes.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Things To Do">
+              <ListItem href="/lake#things-to-do" title="Things To Do">
                 Find out what activities you can do on and around the lake.
               </ListItem>
-              <ListItem href="/docs" title="Marinas">
+              <ListItem href="/lake#marinas" title="Marinas">
                 Known for the best marinas in TN, you are sure to find what you
                 need.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Rentals">
+              <ListItem href="/lake#rentals" title="Rentals">
                 Rent boats, jet skis, paddle boards, golf carts, and more.
               </ListItem>
             </ul>
@@ -539,50 +539,50 @@ export default function MainMenu() {
               <li className="row-span-4">
                 <NavigationMenuLink asChild>
                   <div className="flex h-full space-y-8 w-full select-none flex-col justify-start rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md">
-                    <a href="/">
+                    <Link href="/photos">
                       <Img
                         className="overflow-hidden rounded-[3px]"
                         image={photo1}
                         alt="Property"
                         width={150}
                       />
-                    </a>
-                    <a href="/">
+                    </Link>
+                    <Link href="/photos">
                       <Img
                         className="overflow-hidden rounded-[3px]"
                         image={photo2}
                         alt="Property"
                         width={150}
                       />
-                    </a>
+                    </Link>
                     <div className="mb-2 mt-4 text-lg font-medium text-center">
                       <Button variant="ghost" size="sm">
-                        <Link href="/docs">View All</Link>
+                        <Link href="/photos">View All</Link>
                       </Button>
                     </div>
                   </div>
                 </NavigationMenuLink>
               </li>
 
-              <ListItem href="/docs/installation" title="Interior">
+              <ListItem href="/photos#interior" title="Interior">
                 See the beauty of Norris Lake. From clear water to mountain
                 scenes.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Exterior">
+              <ListItem href="/photos#exterior" title="Exterior">
                 Find out what activities you can do on and around the lake.
               </ListItem>
-              <ListItem href="/docs" title="Property">
+              <ListItem href="/photos#property" title="Property">
                 Known for the best marinas in TN, you are sure to find what you
                 need.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Lake">
+              <ListItem href="/photos#lake" title="Lake">
                 Rent boats, jet skis, paddle boards, golf carts, and more.
               </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
+          <Link href="/contact" legacyBehavior passHref>
             <NavigationMenuLink className="group/contact bg-transparent hover:bg-transparent hover:text-white data-[state=open]:bg-transparent focus:bg-transparent focus:text-white tracking-widest text-sm px-4 py-2 inline-flex h-10 items-center">
               <span className="relative">
                 CONTACT
@@ -599,23 +599,24 @@ export default function MainMenu() {
 const ListItem = React.forwardRef<
   React.ElementRef<'a'>,
   React.ComponentPropsWithoutRef<'a'>
->(({ className, title, children, ...props }, ref) => {
+>(({ className, title, children, href, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
-        <a
+        <Link
           ref={ref}
           className={cn(
             'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
             className,
           )}
+          href={href ?? '/'}
           {...props}
         >
           <div className="text-sm font-medium leading-none">{title}</div>
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}
           </p>
-        </a>
+        </Link>
       </NavigationMenuLink>
     </li>
   )

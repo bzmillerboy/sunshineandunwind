@@ -17,7 +17,7 @@ export async function Header() {
         <div className="flex relative z-20">
           <div className="w-[0%] md:w-[40%]">
             <div className="items-center h-full space-x-4 hidden lg:flex">
-              <div className="hidden">
+              <div className="">
                 <MainMenu />
               </div>
             </div>

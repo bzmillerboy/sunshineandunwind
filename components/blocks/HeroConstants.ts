@@ -9,7 +9,7 @@ export const sizeClasses = {
   '80vh': 'min-h-[580px]  py-16', //deprecated value or 'large'
   xlarge: 'min-h-[680px]  py-16',
   '100vh': 'min-h-[680px]  py-16', //deprecated value or 'xlarge'
-  fullView: 'h-[100vh]  py-16', //deprecated value or 'xlarge'
+  fullView: 'h-[92vh]  py-16', //deprecated value or 'xlarge'
 }
 export const bgClasses = {
   true: 'linear-gradient(to right, rgba(255, 255, 255, 0.75) 50vw, rgba(229, 218, 181, 0.5) 100%',
